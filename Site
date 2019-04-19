@@ -1,0 +1,370 @@
+/* Hyphens */
+p {
+  -webkit-hyphens: manual !important;
+     -moz-hyphens: manual !important;
+      -ms-hyphens: manual !important;
+          hyphens: manual !important;
+}
+.site-title img {
+    height: 70px;
+}
+.title-nav-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media only screen and (max-width: 700px) {
+    .site-title img {
+        height: 50px;
+    }
+    .title-nav-wrapper {
+        padding: 10px 20px!important;
+    }
+    .icon-menu {
+        padding-top: 10px;
+    }
+  .page-desc p{
+    font-size:1.2em;
+  }
+}
+/***** increase title width */
+
+.extra-description-formatting.title-background .title-desc-wrapper.over-image.has-main-image .page-desc,
+.extra-description-formatting.title-background:not(.collection-type-index) .title-desc-wrapper .page-desc {
+    padding: 0px
+}
+/***following code to increase logo size on cover page (colection id based) **/
+
+#collection-54ec929fe4b0dc5d50428a5e> .site-title img {
+    max-width: 300px;
+}
+/*color of footer text*/
+
+#footer p {
+    color: #8c8c8c;
+}
+#footer a {
+    color: #8c8c8c;
+}
+/*Xhange color for link hover*/
+
+.main-nav a span:hover {
+    color: #ffffff;
+}
+/* iHover Base Code */
+
+.ih-item {
+    position: relative;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.ih-item,
+.ih-item * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ih-item a {
+    color: #fff;
+}
+.ih-item a:hover {
+    text-decoration: none;
+}
+.ih-item img {
+    width: 100%;
+    height: 100%;
+}
+.ih-item.circle {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.ih-item.circle .img {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.ih-item.circle .img:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.6), 0 8px 5px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+.ih-item.circle .img img {
+    border-radius: 50%;
+}
+.ih-item.circle .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/*iHover Effect 3*/
+
+.ih-item.circle.effect3 .img {
+    z-index: 11;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    ;
+}
+.ih-item.circle.effect3.colored .info {
+    background: #1a4a72;
+}
+.ih-item.circle.effect3 .info {
+    background: #222;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.99), 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.ih-item.circle.effect3 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 70px 0 0 0;
+    height: 110px;
+}
+.ih-item.circle.effect3 .info p {
+    color: #fff;
+    padding: 50px 0px;
+    margin: 0 20px;
+    font-size: 1em;
+    font-weight: 400;
+}
+.ih-item.circle.effect3.left_to_right .img {
+    -webkit-transform: scale(1) translateX(0);
+    -moz-transform: scale(1) translateX(0);
+    -ms-transform: scale(1) translateX(0);
+    -o-transform: scale(1) translateX(0);
+    transform: scale(1) translateX(0);
+}
+.ih-item.circle.effect3.left_to_right .info {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.ih-item.circle.effect3.left_to_right:hover .img {
+    -webkit-transform: scale(0.4) translateX(150%);
+    -moz-transform: scale(0.4) translateX(150%);
+    -ms-transform: scale(0.4) translateX(150%);
+    -o-transform: scale(0.4) translateX(150%);
+    transform: scale(0.3) translateX(180%);
+    -webkit-filter: grayscale(100%);
+}
+.ih-item.circle.effect3.left_to_right:hover .info {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+/*circle effect 5*/
+
+.ih-item.circle.effect5 {
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+.ih-item.circle.effect5 .info {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.ih-item.circle.effect5 .info .info-back {
+    visibility: hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+  border:5px solid #ffffff;
+    
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.ih-item.circle.effect5 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+  
+}
+.ih-item.circle.effect5 .info p {
+    color: #fff;
+    padding: 20px 10px;
+    margin: 5px 10px;
+    font-size: 1em;
+  line-height:1.3em;
+    font-weight: 400;
+  
+}
+.ih-item.circle.effect5:hover .info {
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+  
+ 
+}
+.ih-item.circle.effect5:hover .info .info-back {
+    visibility: visible;
+   
+
+}
+
+/*map */
+
+.page-map {
+    border: 25px solid #fff;
+}
+/*Chevoron*/
+
+.chevron {
+    position: relative;
+    text-align: center;
+    padding: 2px 0px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #000;
+}
+.chevron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    -webkit-transform: skew(0deg, 10deg);
+    -moz-transform: skew(0deg, 10deg);
+    -ms-transform: skew(0deg, 10deg);
+    -o-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+    background-color:#000;
+}
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    -webkit-transform: skew(0deg, -10deg);
+    -moz-transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -10deg);
+    -o-transform: skew(0deg, -10deg);
+    transform: skew(0deg, -10deg);
+    background-color: #000;
+}
+.chevron [class^=dash] {
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    z-index: 1;
+}
+.chevron .chevron-inner {
+    position: relative;
+    z-index: 2;
+    padding: 15px 10px 0px;
+    margin-bottom: 5px;
+    font-family: "Dosis";
+    font-size: 1.2em;
+    line-height: 1em;
+    text-transform: uppercase;
+ 
+}
+.chevron-content {
+    font-weight: 500;
+  color:#fff;
+ 
+}
+.medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium,.large-button-style-solid .sqs-block-button .sqs-block-button-element--large,body:not(.button-style-default).button-corner-style-pill .sqs-editable-button,body:not(.button-style-default).button-corner-style-pill .sqs-editable-button-shape, .form-block .lightbox-handle, body:not(.button-style-default).button-style-outline .sqs-editable-button, body:not(.button-style-default).button-style-outline .sqs-editable-button-color{
+  border:none;
+    
+    color:#fff!important;
+    background-color:#fff;
+  font-size:1em;
+  font-weight:500;
+  text-transform:uppercase;
+  padding:1.5em;
+opacity:1;
+    -webkit-transition:color .35s linear,background-color .35s ease-in-out;
+    -moz-transition:color .35s linear,background-color .35s ease-in-out;
+    -o-transition:color .35s linear,background-color .35s ease-in-out;
+    transition:color .35s linear,background-color .35s ease-in-out
+      
+}
+
+.medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium:hover,.large-button-style-solid .sqs-block-button .sqs-block-button-element--large:hover,body:not(.button-style-default).button-corner-style-pill .sqs-editable-button:hover,body:not(.button-style-default).button-corner-style-pill .sqs-editable-button-shape:hover, .form-block .lightbox-handle:hover, body:not(.button-style-default).button-style-outline .sqs-editable-button:hover, body:not(.button-style-default).button-style-outline .sqs-editable-button-color:hover{
+  background-color:black;
+  border:none;
+  
+  opacity:1;
+  font-size:1em;
+  font-weight:500 !important;
+}
+
+.small-button-style-outline .sqs-block-button .sqs-block-button-element--small{
+  font-size:1em;
+  font-weight:800;
+  text-transform:uppercase;
+  font-size:1em;
+
+  background-color:#fff;
+  -webkit-transition:color .35s linear,background-color .35s ease-in-out;
+    -moz-transition:color .35s linear,background-color .35s ease-in-out;
+    -o-transition:color .35s linear,background-color .35s ease-in-out;
+    transition:color .35s linear,background-color .35s ease-in-out;
+     width:11em;
+}
+.small-button-style-outline .sqs-block-button .sqs-block-button-element--small:hover{
+  background-color:#ffffff;
+  color:black!important;
+ 
+-webkit-transition:color .35s linear,background-color .35s ease-in-out;
+    -moz-transition:color .35s linear,background-color .35s ease-in-out;
+    -o-transition:color .35s linear,background-color .35s ease-in-out;
+    transition:color .35s linear,background-color .35s ease-in-out
+}
